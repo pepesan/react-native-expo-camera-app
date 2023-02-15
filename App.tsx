@@ -12,7 +12,8 @@ export default function App() {
             const cameraStatus = await Camera.requestCameraPermissionsAsync();
             setHasCameraPermission(cameraStatus.status === 'granted');
         })();
-    }, []);const takePicture = async () => {
+    }, []);
+    const takePicture = async () => {
         if(camera){
             const data = await camera.takePictureAsync(null)
             setImage(data.uri);
