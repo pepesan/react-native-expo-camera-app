@@ -29,7 +29,7 @@ export default function App() {
                     ref={ref => setCamera(ref)}
                     style={styles.fixedRatio}
                     type={type}
-                    //ratio={'1:1'}
+                    ratio={'16:9'}
                 />
             </View>
             <Button
